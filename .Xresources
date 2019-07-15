@@ -1,0 +1,51 @@
+*forground: #00cc00
+*forground_bold: #a8a19f
+!!*cursor: *a8a19f
+
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #407ee7
+*color12: #407ee7
+!! magenta
+*color5: #6666ea
+*color13: #6666ea
+!! cyan
+*color6: #00ad9c
+*color14: #00ad9c
+!! white
+*color7: #a8a19f
+*color15: #f1efee
+
+
+URxvt.background:	[90]#000000
+URxvt.foreground:	white
+
+URxvt.intensityStyles:	false
+URxvt.font:		xft:Ubuntu Mono:size=14
+
+URxvt.scrollBar:	false
+URxvt.letterSpace:  1
+URxvt.cursorColor:	magenta
+URxvt.perl-ext-common: font-size
+
+URxvt.transparent:	true
+URxvt.shading:		20
+
+!! Extensions:
+URxvt.perl-ext-common:	default,matcher,resize-font
+URxvt.colorUL:		#4682b4
+!! font-size
+URxvt.keysym.C-j:    	resize-font:smaller
+URxvt.keysym.C-k:     	resize-font:bigger
+URxvt.keysym.C-l:     	resize-font:reset
