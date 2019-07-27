@@ -10,6 +10,7 @@ fi
 [[ $- != *i* ]] && return
 
 # bash history
+export PROMPT_COMMAND='history -a'
 HISTCONTROL=ignoreboth
 HISTSIZE=5000
 HISTFILESIZE=8000
