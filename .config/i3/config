@@ -9,7 +9,8 @@ font pango:Consolas 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvt
+#bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+Return exec --no-startup-id terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill

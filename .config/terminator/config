@@ -1,0 +1,22 @@
+# This is a comment
+  [global_config]
+    focus = system
+
+
+  [keybindings]
+    full_screen = <Ctrl><Shift>F11
+
+
+  [profiles]
+    [[default]]
+		use_system_font = False
+		font = Ubuntu Mono 16
+		background_color = "#000000" # A comment
+		foreground_color = "#FFFFFF" # Note that hex colour values must be quoted
+		cursor_blink = False
+		cursor_color = "#FF00FF"
+		background_darkness = 0.73
+		scrollback_lines = '5120'
+		background_type = transparent
+		scrollbar_position = hidden
+		custom_command = "echo \"foo#bar\"" #Final comment - this will work as expected. 
