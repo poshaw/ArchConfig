@@ -5,6 +5,9 @@
 if [[ -d "$HOME/bin" ]]; then
 	PATH="$HOME/bin:$PATH"
 fi
+# if [[ -d "$HOME/.local/lib/python3.7/site-packages/django/bin" ]]; then
+# 	PATH="$PATH:$HOME/.local/lib/python3.7/site-packages/django/bin"
+# fi
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -25,7 +28,7 @@ fi
 
 finish() {
 	if [[ -f "$HOME/bin/uniqify.py" ]]; then
-		python3 $HOME/bin/uniqify.py --infile=$HOME/.bash_history
+		python $HOME/bin/uniqify.py --infile=$HOME/.bash_history
 	fi
 }
 trap finish EXIT

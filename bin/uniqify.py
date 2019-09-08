@@ -1,5 +1,5 @@
-#! /usr/bin/python3
-# _*_ conding: utf-8 _*_
+#! /usr/bin/python
+# -*- conding: utf-8 -*-
 
 """ removes duplicate lines from a file
 
