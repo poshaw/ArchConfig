@@ -23,6 +23,9 @@ exec --no-startup-id feh --bg-scale $HOME/pics/desktop.jpg
 # Set screen resolution
 exec --no-startup-id /home/phil/bin/setResolution.sh
 
+# start up compositor
+exec --no-startup-id compton
+
 # Shutdown computer
 bindsym $mod+Shift+x exec $HOME/bin/prompt "Are you sure you want to shutdown?" "sudo shutdown now"
 

@@ -1,4 +1,4 @@
-" show existing tab with 4 spaces width
+" show existing tab with tn spaces width
 let tn=3
 let &tabstop=tn
 " when indenting with '>', use 4 spaces width
@@ -10,7 +10,6 @@ nnoremap <leader>i <Esc><Esc>:w<CR>:set nonumber<CR>:belowright split term://pyt
 
 " comment
 let comment='#'
-" nnoremap <leader>G :call Comment(comment)<CR>
 nnoremap <C-_> :call Comment(comment)<CR>
 nnoremap <C-x> <Esc><Esc>:s!^!g:Comment!
 nnoremap <leader>c <Esc><Esc>:s!^!# !<CR>:nohlsearch<CR>

@@ -18,8 +18,7 @@ HISTCONTROL=ignoreboth
 HISTSIZE=5000
 HISTFILESIZE=8000
 
-# PS1='[\u@\h \W]\$ '
-PS1='\e[0;36m[\u@\h \W]\$ \e[m '
+PS1="\[\e[1;36m\] \u\[\e[0;33m\]@\[\e[0;32m\]\h \[\e[0;34m\]\W/ \[\e[0;33m\]\$\[\e[0m\] "
 
 # source files
 if [[ -f $HOME/.bash_aliases ]]; then
