@@ -2,7 +2,10 @@
 
 # on new system:
 # $ sudo pacman -Sy git
-# $ git clone https://github.com/poshaw/archconfig.git .
+# $ rm .bash*
+# $ init .
+# $ remote add origin https://github.com/poshaw/archconfig.git
+# $ git pull origin master
 
 # make sure to run script as root {{{
 if [ $EUID -ne 0 ]; then
