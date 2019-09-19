@@ -54,7 +54,7 @@ fi # }}}
 
 #systemctl restart dhcpcd.service
 pacman -Syu
-pacman -S --noconfirm accountsservice alsa-utils base-devel compton dos2unix feh firefox git i3-gaps i3status jsoncpp kitty lightdm lightdm-gtk-greeter locate neovim pv python python-pip ranger rsync scrot tree unzip wget xorg-xrandr xorg-server xorg-xinit zathura-pdf-poppler zip
+pacman -S --noconfirm accountsservice alsa-utils base-devel compton dos2unix feh firefox git i3-gaps i3status jsoncpp kitty lightdm lightdm-gtk-greeter neovim pv python python-pip ranger rsync scrot tree unzip wget xorg-xrandr xorg-server xorg-xinit zathura-pdf-poppler zip
 #mkdir /mnt/usb
 #chmod 755 /mnt/usb
 #groupadd -r autologin
