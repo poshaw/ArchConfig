@@ -41,6 +41,9 @@
 !/.local/share
 /.local/share/*
 !/.local/share/fonts
+!/.ssh
+/.ssh/*
+!/.ssh/config
 !/pics
 /pics/*
 !/pics/desktop.jpg

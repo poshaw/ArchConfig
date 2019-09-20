@@ -12,7 +12,6 @@ git config --global user.email "poadshaw@gmail.com"
 [ ! -d "%{HOME}/downloads"  ] && mkdir -p ${HOME}/downloads
 [ ! -d "/mnt/usb"  ] && sudo mkdir -p /mnt/usb
 
-
 # Install polybar
 cd  ${HOME}/downloads
 git clone https://aur.archlinux.org/polybar.git
