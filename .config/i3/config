@@ -18,7 +18,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run -fn 'Ubuntu-20'
 
 # Set background image
-exec --no-startup-id feh --bg-scale $HOME/pics/desktop.jpg
+exec --no-startup-id feh --no-fehbg --bg-scale $HOME/pics/desktop.jpg
 
 # Set screen resolution
 exec --no-startup-id /home/phil/bin/setResolution.sh
