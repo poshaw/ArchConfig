@@ -8,11 +8,13 @@ cd  ${HOME}
 git config --global user.name "Phil Shaw"
 git config --global user.email "poadshaw@gmail.com"
 
-# Make downloads folder if it does not already exist
+# Make folders if then do not already exist
 [ ! -d "%{HOME}/downloads"  ] && mkdir -p ${HOME}/downloads
-cd  ${HOME}/downloads
+[ ! -d "/mnt/usb"  ] && sudo mkdir -p /mnt/usb
+
 
 # Install polybar
+cd  ${HOME}/downloads
 git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -sri
