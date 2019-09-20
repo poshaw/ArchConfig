@@ -3,7 +3,7 @@
 # on new system:
 # $ sudo pacman -Sy git
 # $ rm .bash*
-# $ init .
+# $ git init .
 # $ remote add origin https://github.com/poshaw/archconfig.git
 # $ git pull origin master
 
