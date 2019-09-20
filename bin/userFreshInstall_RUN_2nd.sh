@@ -7,6 +7,7 @@ sudo pacman -Syu
 cd  ${HOME}
 git config --global user.name "Phil Shaw"
 git config --global user.email "poadshaw@gmail.com"
+git remote set-url origin git@github.com:poshaw/archconfig.git
 
 # Make folders if then do not already exist
 [ ! -d "%{HOME}/downloads"  ] && mkdir -p ${HOME}/downloads
