@@ -32,6 +32,8 @@ filetype plugin indent on
 " set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 hi NonText ctermfg=8
+set splitright
+set splitbelow
 
 " Key (re)Mapping
 	noremap <Leader>y "*y
