@@ -1,0 +1,19 @@
+#! /bin/bash
+
+# Run in i3 using:
+# exec --no-startup-id ${HOME}/bin/startupScripts 
+
+# Set screen Resolution
+
+# to find name of display:
+# $ xrandr -q
+# to find paramaters:
+# $ gtf 1920 1080 60
+
+xrandr --newmode "1920x1080p"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode Virtual-1 "1920x1080p"
+sleep 0.25
+xrandr --output Virtual-1 --mode "1920x1080p"
+
+# Set desktop wallpaper
+feh --no-fehbg --bg-scale $HOME/pics/desktop.jpg
