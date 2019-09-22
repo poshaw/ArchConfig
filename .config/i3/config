@@ -144,9 +144,6 @@ mode "resize" {
 }
 
 
-# start polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # take screenshot
 # bindsym --release $mod+Print exec --no-startup-id scrot -s '%Y%m%d%H%M_screen_$wx$h.png' -e 'mv $f $HOME/pics/'
 bindsym --release $mod+Print exec --no-startup-id scrot -s $HOME/pics/$(date +"%Y%m%d%H%M")_screen.png

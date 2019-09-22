@@ -17,3 +17,6 @@ xrandr --output Virtual-1 --mode "1920x1080p"
 
 # Set desktop wallpaper
 feh --no-fehbg --bg-scale $HOME/pics/desktop.jpg
+
+# start polybar
+${HOME}/.config/polybar/launch.sh
