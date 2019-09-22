@@ -27,7 +27,12 @@ fi
 
 finish() {
 	if [[ -f "$HOME/bin/uniqify.py" ]]; then
-		python $HOME/bin/uniqify.py --infile=$HOME/.bash_history
+		# clean up .bash_history
+		python ${HOME}/bin/uniqify.py --infile=${HOME}/.bash_history
+		# push any changes to config files to github
+		cd ${HOME}
+		git commit -a -m "$(date +"%Y%m%d_%H%M")"
+		git push -u origin master
 	fi
 }
 trap finish EXIT
