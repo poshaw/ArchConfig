@@ -28,6 +28,15 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # Install Python extensions
 cd  ${HOME}
 python -m pip install --user --upgrade pynvim
+python -m pip install --user --upgrade jedi
+python -m pip install --user --upgrade numpy
+python -m pip install --user --upgrade jupyter
+python -m pip install --user --upgrade wheel
+python -m pip install --user --upgrade setuptools
+python -m pip install --user --upgrade MySQL-python
+python -m pip install --user --upgrade mysqlclient
+python -m pip install --user --upgrade django
+python -m pip install --user --upgrade django_crispy_forms
 
 
 # sudo mount /dev/sdb1 /mnt/usb -o uid=${USER},gid=${USER},fmask=113,dmask=002

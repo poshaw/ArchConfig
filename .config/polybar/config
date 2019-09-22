@@ -125,10 +125,6 @@ label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
 
-
-
-
-
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
@@ -395,10 +391,10 @@ exec = xdotool getactivewindow getwindowname
 
 [module/titlehook]
 type = custom/ipc
-hook-0 = displayTitle
+hook-0 = ${HOME}/bin/displayTitle
 ;hook-1 = xdotool getactivewindow getwindowname
-hook-1 = displayTitle
-hook-2 = echo hook3
+hook-1 = ${HOME}/bin/displayTitle
+hook-2 = ${HOME}/bin/displayTitle switch
 initial = 1
 click-left = polybar-msg hook titlehook 2
 ; polybar-msg hook HOOKNAME HOOKNUMBER
