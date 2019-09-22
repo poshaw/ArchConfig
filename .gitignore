@@ -13,6 +13,7 @@
 !/bin/myCompress.sh
 !/bin/prompt
 !/bin/setResolution.sh
+!/bin/startupScripts
 !/bin/uniqify.py
 !/bin/wifi.sh
 !/bin/suFreshInstall_RUN_1st.sh

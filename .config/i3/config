@@ -14,17 +14,14 @@ bindsym $mod+Return exec --no-startup-id kitty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Ubuntu-20'
-
-# Set background image
-exec --no-startup-id feh --no-fehbg --bg-scale $HOME/pics/desktop.jpg
-
-# Set screen resolution
-exec --no-startup-id /home/phil/bin/setResolution.sh
-
 # start up compositor
 exec --no-startup-id compton
+
+# Set screen resolution & wallpaper
+exec --no-startup-id ${HOME}/bin/startupScripts
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run -fn 'Ubuntu-20'
 
 # Shutdown computer
 bindsym $mod+Shift+x exec $HOME/bin/prompt "Are you sure you want to shutdown?" "sudo shutdown now"
