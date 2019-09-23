@@ -18,6 +18,7 @@
 !/bin/wifi.sh
 !/bin/suFreshInstall_RUN_1st.sh
 !/bin/userFreshInstall_RUN_2nd.sh
+!/bin/displayTitle
 !/.config
 /.config/*
 !/.config/i3
