@@ -165,3 +165,6 @@ hide_edge_borders none
 
 # sync up with github
 exec --no-startup-id git pull origin master
+
+# start network-manager-applet
+exec --no-startup-id nm-applet
