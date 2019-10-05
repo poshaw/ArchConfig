@@ -166,5 +166,5 @@ hide_edge_borders none
 # sync up with github
 exec --no-startup-id git pull origin master
 
-# start nm-applet & Private Internet Access vpn
-exec --no-startup-id $HOME/bin/wifi
+# start nm-applet
+exec --no-startup-id nm-applet
