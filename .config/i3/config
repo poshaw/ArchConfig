@@ -168,3 +168,6 @@ exec --no-startup-id git pull origin master
 
 # start network-manager-applet
 exec --no-startup-id nm-applet
+
+# start Private Internet Access vpn
+exec --no-startup-id $HOME/bin/pia-linux-1.5-03584.run
