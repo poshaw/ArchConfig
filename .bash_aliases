@@ -6,4 +6,4 @@ alias top='top && clear'
 # alias fritzing="$HOME/bin/fritzing/Fritzing &"
 alias pdf='zathura'
 alias yt='youtube-dl --add-metadata -ic'
-alias yta='youtube-dl --add-metadata -xic'
+alias yta='youtube-dl --add-metadata -xic --audio-format mp3'
