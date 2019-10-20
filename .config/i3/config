@@ -156,7 +156,7 @@ for_window [class="feh"] floating enable
 for_window [title="PyClean"] floating enable
 
 # open ROOT Canvas windows floating
-for_window [title="Canvas"] floating enable
+for_window [title="ROOT"] floating enable
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 for_window [class="^.*"] border pixel 1
