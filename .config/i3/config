@@ -155,6 +155,9 @@ for_window [class="feh"] floating enable
 # open tk windows floating
 for_window [title="PyClean"] floating enable
 
+# open ROOT Canvas windows floating
+for_window [title="Canvas"] floating enable
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 for_window [class="^.*"] border pixel 1
 new_window pixel 1
