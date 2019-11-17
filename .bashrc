@@ -8,6 +8,9 @@ fi
 # if [[ -d "$HOME/.local/lib/python3.7/site-packages/django/bin" ]]; then
 # 	PATH="$PATH:$HOME/.local/lib/python3.7/site-packages/django/bin"
 # fi
+if [[ -d $HOME/.local/bin ]]; then
+	PATH="$PATH:$HOME/.local/bin"
+fi
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
