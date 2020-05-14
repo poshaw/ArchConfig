@@ -1,19 +1,19 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'davidhalter/jedi-vim'
-let g:jedi#completions_enabled = 0
-let g:jedi#use_splits_not_buffers = "right"
-let g:jedi#goto_command = "<leader>d"
-let g:jedi#goto_assignments_command = ""
-let g:jedi#goto_definitions_command = ""
-let g:jedi#documentation_command = ""
-let g:jedi#usages_command = ""
-let g:jedi#completions_command = ""
-let g:jedi#rename_command = ""
-Plug 'zchee/deoplete-jedi'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-let g:deoplete#enable_at_startup = 1
-set completeopt-=preview
+"Plug 'davidhalter/jedi-vim'
+"let g:jedi#completions_enabled = 0
+"let g:jedi#use_splits_not_buffers = "right"
+"let g:jedi#goto_command = "<leader>d"
+"let g:jedi#goto_assignments_command = ""
+"let g:jedi#goto_definitions_command = ""
+"let g:jedi#documentation_command = ""
+"let g:jedi#usages_command = ""
+"let g:jedi#completions_command = ""
+"let g:jedi#rename_command = ""
+"Plug 'zchee/deoplete-jedi'
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"let g:deoplete#enable_at_startup = 1
+"set completeopt-=preview
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
