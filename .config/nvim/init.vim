@@ -34,7 +34,7 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 hi NonText ctermfg=8
 set splitright
 set splitbelow
-set scrolloff=4
+set scrolloff=4  " Keep the last 4 lines visible when scrolling
 
 " Key (re)Mapping
 	noremap <Leader>y "*y
