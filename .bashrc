@@ -1,6 +1,8 @@
 #
 # ~/.bashrc
 #
+# to reload .bashrc:
+# $ source ~/.bashrc
 
 if [[ -d "$HOME/bin" ]]; then
 	PATH="$HOME/bin:$PATH"
