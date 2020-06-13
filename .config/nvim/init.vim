@@ -69,9 +69,5 @@ autocmd BufLeave term://* stopinsert
 	endfunction
 
 	function ShowMD()
-		" change local directory in current window to this file's directory
-		lcd %:p:h
-		silent execute '! a.sh ' . expand('%:p')
-" 		silent execute '! pandoc ' . expand('%:t') . ' > ' . expand('%:r') . '.html'
-" 		! surf google.com >/dev/null 2>&1 &
-endfunction
+		silent execute '! ./a.sh ' . expand('%:p')
+	endfunction
