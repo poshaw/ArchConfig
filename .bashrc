@@ -4,16 +4,6 @@
 # to reload .bashrc:
 # $ source ~/.bashrc
 
-if [[ -d "$HOME/bin" ]]; then
-	PATH="$HOME/bin:$PATH"
-fi
-# if [[ -d "$HOME/.local/lib/python3.7/site-packages/django/bin" ]]; then
-# 	PATH="$PATH:$HOME/.local/lib/python3.7/site-packages/django/bin"
-# fi
-if [[ -d $HOME/.local/bin ]]; then
-	PATH="$PATH:$HOME/.local/bin"
-fi
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -23,8 +13,28 @@ HISTCONTROL=ignoreboth
 HISTSIZE=5000
 HISTFILESIZE=8000
 
-# prompt
-PS1="\[\e[1;36m\] \u\[\e[0;33m\]@\[\e[0;32m\]\h \[\e[0;34m\]\W/ \[\e[0;33m\]\$\[\e[0m\] "
+# RGB colors for PS1
+# for ideas check out: https://coolors.co/generate
+C1='\[\e[38;2;184;161;101m\]'
+C2='\[\e[38;2;150;165;120m\]'
+C3='\[\e[38;2;146;181;150m\]'
+C4='\[\e[38;2;115;145;150m\]'
+C5='\[\e[38;2;184;186;204m\]'
+RESET='\[$(tput sgr0)\]'
+export PS1="\
+${C4}\u\
+${C2}@\
+${C5}\h:\
+${C2}[\
+${C3}\w\
+${C2}]\
+\n\
+${C1}\$ \
+${RESET}"
+
+export PS2="\
+${C1}> \
+${RESET}"
 
 # use neovim for man pages
 export MANPAGER='nvim +Man!'
@@ -33,6 +43,13 @@ export MANPAGER='nvim +Man!'
 if [[ -f $HOME/.bash_aliases ]]; then
 	source $HOME/.bash_aliases
 fi
+
+if [[ -d ${HOME}/bin ]]; then
+	PATH=${PATH}:${HOME}/bin
+fi
+
+# fix delete key for suckless st
+printf '\033[?1h\033=' >/dev/tty
 
 finish() {
 	if [[ -f "$HOME/bin/uniqify.py" ]]; then
