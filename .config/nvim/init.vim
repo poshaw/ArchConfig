@@ -45,7 +45,7 @@ set scrolloff=4  " Keep the last 4 lines visible when scrolling
 " 	nnoremap <leader>h :call ShowHiddenChar()<CR>
 	nnoremap <leader>h :set list!<CR>
 	nnoremap <leader>H :nohlsearch<CR>
-	nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+	nnoremap <leader>ev :e $MYVIMRC<CR>
 	nnoremap <leader>sv :silent! bd ~/.config/nvim/init.vim<CR>:source $MYVIMRC<CR>
 	nnoremap <leader>N :set relativenumber!<CR>
 	nnoremap <leader>n :set number!<CR>
@@ -68,3 +68,10 @@ autocmd BufLeave term://* stopinsert
 		endif
 	endfunction
 
+	function ShowMD()
+		" change local directory in current window to this file's directory
+		lcd %:p:h
+		silent execute '! a.sh ' . expand('%:p')
+" 		silent execute '! pandoc ' . expand('%:t') . ' > ' . expand('%:r') . '.html'
+" 		! surf google.com >/dev/null 2>&1 &
+endfunction
