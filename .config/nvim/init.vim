@@ -67,7 +67,3 @@ autocmd BufLeave term://* stopinsert
 			let g:showing_hiddens = 1
 		endif
 	endfunction
-
-	function ShowMD()
-		silent execute '! ./a.sh ' . expand('%:p')
-	endfunction
