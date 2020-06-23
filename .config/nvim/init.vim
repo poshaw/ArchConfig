@@ -14,6 +14,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "let g:deoplete#enable_at_startup = 1
 "set completeopt-=preview
+Plug 'tmhedberg/matchit'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
