@@ -18,6 +18,7 @@ Plug 'tmhedberg/matchit'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'scrooloose/nerdcommenter'
 "Plug 'sbdchd/neoformat'
 Plug 'scrooloose/nerdtree'
@@ -28,6 +29,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 call plug#end()
+
+set termguicolors
+lua require 'colorizer'.setup({ "*"; }, { rgb_fn = true; } )
 
 set number
 filetype plugin indent on	
