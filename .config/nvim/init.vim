@@ -57,6 +57,8 @@ set scrolloff=4  " Keep the last 4 lines visible when scrolling
 	nnoremap <leader>n :set number!<CR>
 	nnoremap <F5> <Esc><Esc>:w<CR>:buffers<CR>:buffer<Space>
 	nnoremap <F4> <Esc><Esc>:w<CR>:bp<CR>
+	vnoremap <C-c> "*y :let @+=@*<CR>
+	map <C-p> "+P
 
 
 autocmd BufWinEnter,WinEnter term://* startinsert
