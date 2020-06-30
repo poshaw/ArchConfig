@@ -15,7 +15,7 @@ bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+Shift+q kill
 
 # start up compositor
-exec --no-startup-id compton
+exec --no-startup-id xcompmgr
 
 # Set screen resolution & wallpaper
 exec --no-startup-id ${HOME}/bin/startupScripts
