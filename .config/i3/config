@@ -9,7 +9,7 @@ font pango:Consolas 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id st
 
 # kill focused window
 bindsym $mod+Shift+q kill
