@@ -65,3 +65,12 @@ finish() {
 	fi
 }
 trap finish EXIT
+
+function ssh_function
+{
+    printf "\e[40m\e[37m"    # Grey on black
+    clear
+    \ssh $@ || read           # Actual ssh command
+    printf "\e[0m"           # Reset terminal
+    clear
+}
