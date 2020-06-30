@@ -13,6 +13,9 @@ HISTCONTROL=ignoreboth
 HISTSIZE=5000
 HISTFILESIZE=8000
 
+shopt -s histappend
+shopt -s checkwinsize
+
 # RGB colors for PS1
 # for ideas check out: https://coolors.co/generate
 C1='\[\e[38;2;184;161;101m\]'
