@@ -4,7 +4,8 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-export EDITOR="nvim"
+export VISUAL="nvim"
+export EDITOR="$VISUAL"
 export TERMINAL="kitty"
 export BROWSER="firefox"
 export READER="zathura"
