@@ -10,8 +10,8 @@
 # bash history
 export PROMPT_COMMAND='history -a'
 HISTCONTROL=ignoreboth
-HISTSIZE=5000
-HISTFILESIZE=8000
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 shopt -s histappend
 shopt -s checkwinsize
